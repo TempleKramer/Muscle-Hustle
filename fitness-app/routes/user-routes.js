@@ -1,16 +1,21 @@
 const router = require('express').Router();
 
-// Set up GET all and POST at /api/pizzas
 router
   .route('/')
   .get()
   .post();
 
-// Set up GET one, PUT, and DELETE at /api/pizzas/:id
 router
   .route('/:id')
-  .get()
+  .get(getUserById)
   .put()
-  .delete();
+  .delete(deleteUser);
+
+  const {
+    getAllUser,
+    getUserById,
+    createUser,
+
+  } = require('../../controllers/user-controller');
 
 module.exports = router;
