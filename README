@@ -1,1 +1,20 @@
-#FITNESS APP
+# FITNESS APP
+this app is designed to help you keep track your workouts
+
+## description
+this app is used so that you can type out what you will be doing in your workout and you can save it for later to look back on
+
+## dependencies
+react 
+nodejs
+mongo
+
+## authors
+Hayden Carr, Jermaris Chaney, Temple Kramer, Terrany Binford, Zack Boatright
+
+## links
+https://github.com/TempleKramer/Fitness-App
+
+## things to be developed in the future
+
+## screenshot of the application
