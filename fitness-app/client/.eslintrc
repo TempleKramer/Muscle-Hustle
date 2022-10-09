@@ -1,0 +1,10 @@
+// .eslintrc file (no extension)
+{
+    "extends": [
+      "react-app"
+    ],
+   "globals":{
+    "__DEV__":true
+   } 
+  }
+  
