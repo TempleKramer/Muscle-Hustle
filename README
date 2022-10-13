@@ -1,5 +1,5 @@
 # FITNESS APP
-this app is designed to help you keep track your workouts
+this app is designed to help you keep track your workouts and save workouts with login functionality
 
 ## description
 this app is used so that you can type out what you will be doing in your workout and you can save it for later to look back on
@@ -7,14 +7,30 @@ this app is used so that you can type out what you will be doing in your workout
 ## dependencies
 react 
 nodejs
-mongo
+mongodb
+dotenv
+express.js
+bootstrap
+qraphql
+ESLint
+apollo client
+
 
 ## authors
 Hayden Carr, Jermaris Chaney, Temple Kramer, Terrany Binford, Zack Boatright
 
 ## links
+original repo
 https://github.com/TempleKramer/Fitness-App
+running repo
+https://github.com/jchane00/Fitness-App
+
+heroku link
 
 ## things to be developed in the future
+add user interface to count calorie intake
+add workout suggestions
+add calendar to see past workouts in prior months
+add healthy food plans and recipes
 
 ## screenshot of the application
