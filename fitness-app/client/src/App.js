@@ -10,6 +10,8 @@ import {
   createHttpLink,
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
+import Saved from './components/saved';
+import Search from './components/search';
 
 import Homepage from './components/homepage/homepage.js';
 import Navbar from './components/Navbar';
@@ -22,7 +24,7 @@ const httpLink = createHttpLink({
 //Construct request middleware that will attach the JWT token to every request as an `authorization` header
 const authLink = setContext((_, { headers }) => {
   // get the authentication token from local storage if it exists
-  const token = localStorage.getItem('id_token');
+  const token = localStorage.getItem('token');
   // return the headers to the context so httpLink can read them
   return {
     headers: {
@@ -46,6 +48,9 @@ function App() {
           <Navbar />
           <Switch>
              <Route exact path="/" component={Homepage} />
+             <Route exact path="/saved" component={Saved} />
+             <Route exact path="/search" component={Search} />
+
             <Route render={() => <h1 className="display-2">Wrong page!</h1>} /> 
           </Switch>
         </>

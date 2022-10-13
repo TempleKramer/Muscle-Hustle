@@ -8,7 +8,8 @@ const WorkoutForm = () => {
   async function onSubmit(event) {
     event.preventDefault();
     event.stopPropagation();
-    const formData = new FormData(event.target);
+    const form = event.target
+    const formData = new FormData(form);
     const params = {
       name: formData.get("name"),
       numberofreps: parseInt(formData.get("numberofreps")),
@@ -17,7 +18,8 @@ const WorkoutForm = () => {
     try {
       const { data } = await addWorkout({ variables: params });
       console.log(data);
-      event.target.reset();
+      
+      form.reset();
     } catch (error) {
       console.error(error);
     }

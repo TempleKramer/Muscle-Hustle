@@ -7,7 +7,7 @@ export const GET_WORKOUTS = gql`
         name
         numberofreps
         date
-        user
+        
     }
   }
 `;
@@ -18,7 +18,7 @@ export const GET_WORKOUTSBYNAME= gql`
       name
       numberofreps
       date
-      user
+      
     }
   }
 `;
@@ -29,7 +29,7 @@ export const GET_WORKOUTSBYID= gql`
       name
       numberofreps
       date
-      user
+      
     }
   }
 `;

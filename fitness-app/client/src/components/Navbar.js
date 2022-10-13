@@ -15,13 +15,13 @@ const AppNavbar = () => {
     <>
       <Navbar bg='dark' variant='dark' expand='lg'>
         <Container fluid>
-          <Navbar.Brand as={Link} to='/Homepage'>
+          <Navbar.Brand as={Link} to='/'>
             Muscle Hustle
           </Navbar.Brand>
           <Navbar.Toggle aria-controls='navbar' />
           <Navbar.Collapse id='navbar'>
             <Nav className='ml-auto'>
-              <Nav.Link as={Link} to='/'>
+              <Nav.Link as={Link} to='/search'>
                 Search For Workouts
               </Nav.Link>
               {/* if user is logged in show saved workouts and logout */}
