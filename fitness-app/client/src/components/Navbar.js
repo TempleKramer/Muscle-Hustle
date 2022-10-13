@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar, Nav, Container, Modal, Tab } from 'react-bootstrap';
+import { Navbar, Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink, Container, Modal, Tab } from 'react-bootstrap';
 import SignUpForm from './signup';
 import LoginForm from './login';
+
 
 import Auth from '../utils/auth';
 
@@ -14,7 +15,7 @@ const AppNavbar = () => {
     <>
       <Navbar bg='dark' variant='dark' expand='lg'>
         <Container fluid>
-          <Navbar.Brand as={Link} to='/'>
+          <Navbar.Brand as={Link} to='/Homepage'>
             Home
           </Navbar.Brand>
           <Navbar.Toggle aria-controls='navbar' />

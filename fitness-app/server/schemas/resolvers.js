@@ -1,5 +1,5 @@
 const { AuthenticationError } = require('apollo-server-express');
-const { User } = require('../models');
+const { User, Workout } = require('../models');
 const { signToken } = require('../utils/auth');
 
 const resolvers = {
@@ -23,6 +23,13 @@ const resolvers = {
         .select('-__v -password');
         
     },
+    workouts: async ()=> {
+      return Workout.find()
+    },
+    workout: async (parent, args, context)=> {
+      console.log(context)
+      return Workout.findOne({_id:context.user._id})
+    }
    
   },
 
@@ -49,6 +56,9 @@ const resolvers = {
       const token = signToken(user);
       return { token, user };
     },
+    addWorkout: async (parent, args) =>{
+      return Workout.create(args)
+    }
   }};
 
 module.exports = resolvers;

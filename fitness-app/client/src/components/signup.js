@@ -1,17 +1,19 @@
-import React, { useState, useEffect } from 'react';
-import { Form, Button, Alert } from 'react-bootstrap';
+import React, { useState, useEffect } from "react";
+import { Form, Button, Alert } from "react-bootstrap";
+import { useHistory } from "react-router-dom";
 
-import { useMutation } from '@apollo/client';
-import { ADD_USER } from '../utils/mutations';
+import { useMutation } from "@apollo/client";
+import { ADD_USER } from "../utils/mutations";
 
-import Auth from '../utils/auth';
+import Auth from "../utils/auth";
 
-const SignupForm = () => {
+const SignupForm = (props) => {
+  const router = useHistory();
   // set initial form state
   const [userFormData, setUserFormData] = useState({
-    username: '',
-    email: '',
-    password: '',
+    username: "",
+    email: "",
+    password: "",
   });
   // set state for form validation
   const [validated] = useState(false);
@@ -32,7 +34,6 @@ const SignupForm = () => {
     const { name, value } = event.target;
     setUserFormData({ ...userFormData, [name]: value });
   };
-
   const handleFormSubmit = async (event) => {
     event.preventDefault();
 
@@ -49,14 +50,16 @@ const SignupForm = () => {
       });
       console.log(data);
       Auth.login(data.addUser.token);
+      router.push('/')
+      props.handleModalClose()
     } catch (err) {
       console.error(err);
     }
 
     setUserFormData({
-      username: '',
-      email: '',
-      password: '',
+      username: "",
+      email: "",
+      password: "",
     });
   };
 

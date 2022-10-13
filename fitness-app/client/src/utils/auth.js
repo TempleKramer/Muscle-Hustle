@@ -31,7 +31,16 @@ export default {
 
     return jwt.sign({ data: payload }, secret, { expiresIn: expiration });
   },
-  loggedIn: function () {
-    return false;
+  login: function(token) {
+    window.localStorage.setItem('token', token)
   },
+  loggedIn: function () {
+    return !!window.localStorage.getItem('token');
+
+  },
+  logout: function() {
+    window.localStorage.setItem('token', "")
+    window.location = '/'
+  }
 };
+
