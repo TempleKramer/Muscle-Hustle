@@ -16,7 +16,7 @@ const server = new ApolloServer({
 const app = express();
 
 app.use(express.urlencoded({ extended: false }));
-app.use(express.json());
+app.use(express.json({limit:'5000kb'}));
 
 // Serve up static assets
 if (process.env.NODE_ENV === 'production') {
@@ -30,7 +30,7 @@ app.get('/', (req, res) => {
 // Create a new instance of an Apollo server with the GraphQL schema
 const startApolloServer = async (typeDefs, resolvers) => {
   await server.start();
-  server.applyMiddleware({ app });
+  server.applyMiddleware({ app, bodyParserConfig:'10mb' });
 
   db.once('open', () => {
     app.listen(PORT, () => {

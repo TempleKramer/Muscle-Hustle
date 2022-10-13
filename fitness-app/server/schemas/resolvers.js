@@ -56,8 +56,9 @@ const resolvers = {
       const token = signToken(user);
       return { token, user };
     },
-    addWorkout: async (parent, args) =>{
-      return Workout.create(args)
+    addWorkout: async (parent, args, context) =>{
+      console.log(context.user)
+      return Workout.create({...args, user:context.user._id})
     }
   }};
 

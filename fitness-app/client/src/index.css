@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.hero{
+  background-image: url('/fitness.jpg');
+  height: 300px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}

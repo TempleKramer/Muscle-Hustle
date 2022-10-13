@@ -14,9 +14,8 @@ const typeDefs = gql`
   type Workout{
     _id:ID
     name: String
-    numberofreps: Number
+    numberofreps: Int
     date: String
-    user: User
   }
 
   type Query {
@@ -24,13 +23,13 @@ const typeDefs = gql`
     users: [User]
     user(username: String!): User
     workouts:[Workout]
-    workout(user:String!):Workout
+    workout:Workout
   }
 
   type Mutation {
     login(email: String!, password: String!): Auth
     addUser(username: String!, email: String!, password: String!): Auth
-    addWorkout(name: String!, numberofreps: Number!, date: String!, user: String!)
+    addWorkout(name: String!, numberofreps: Int!, date: String!):Workout
   }
 `;
 
