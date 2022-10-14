@@ -16,19 +16,19 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
-    "start": "node server/app.js"
+    "start": "node server.js"
   }, 
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TempleKramer/Fitness-App.git"
+    "url": "git+https://github.com/jchane00/Fitness-App.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/TempleKramer/Fitness-App/issues"
+    "url": "https://github.com/jchane00/Fitness-App/issues"
   },
-  "homepage": "https://github.com/TempleKramer/Fitness-App#readme",
+  "homepage": "https://github.com/jchane00/Fitness-App#readme",
   "dependencies": {
     "concurrently": "^7.4.0"
   }
