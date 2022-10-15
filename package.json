@@ -49,7 +49,6 @@
   },
   "homepage": "https://github.com/jchane00/Fitness-App#readme",
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.40.0",
     "react-app-rewired": "^2.2.1"
   }
 }
