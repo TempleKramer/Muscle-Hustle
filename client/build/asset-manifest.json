@@ -1,28 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.e119f5cf.chunk.css",
-    "main.js": "/static/js/main.83519243.chunk.js",
-    "main.js.map": "/static/js/main.83519243.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.c993218d.js",
-    "runtime-main.js.map": "/static/js/runtime-main.c993218d.js.map",
-    "static/css/2.80f479d8.chunk.css": "/static/css/2.80f479d8.chunk.css",
-    "static/js/2.81c09acd.chunk.js": "/static/js/2.81c09acd.chunk.js",
-    "static/js/2.81c09acd.chunk.js.map": "/static/js/2.81c09acd.chunk.js.map",
-    "static/js/3.69a7d3bc.chunk.js": "/static/js/3.69a7d3bc.chunk.js",
-    "static/js/3.69a7d3bc.chunk.js.map": "/static/js/3.69a7d3bc.chunk.js.map",
+    "main.css": "/static/css/main.073c9b0a.css",
+    "main.js": "/static/js/main.2c6fc8ad.js",
+    "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
-    "precache-manifest.6022f407288ea9abae9bcd205f31bb64.js": "/precache-manifest.6022f407288ea9abae9bcd205f31bb64.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.80f479d8.chunk.css.map": "/static/css/2.80f479d8.chunk.css.map",
-    "static/css/main.e119f5cf.chunk.css.map": "/static/css/main.e119f5cf.chunk.css.map",
-    "static/js/2.81c09acd.chunk.js.LICENSE.txt": "/static/js/2.81c09acd.chunk.js.LICENSE.txt",
-    "static/js/main.83519243.chunk.js.LICENSE.txt": "/static/js/main.83519243.chunk.js.LICENSE.txt"
+    "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
+    "main.2c6fc8ad.js.map": "/static/js/main.2c6fc8ad.js.map",
+    "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.c993218d.js",
-    "static/css/2.80f479d8.chunk.css",
-    "static/js/2.81c09acd.chunk.js",
-    "static/css/main.e119f5cf.chunk.css",
-    "static/js/main.83519243.chunk.js"
+    "static/css/main.073c9b0a.css",
+    "static/js/main.2c6fc8ad.js"
   ]
 }

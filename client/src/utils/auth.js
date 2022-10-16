@@ -1,7 +1,3 @@
-import jwt from "jsonwebtoken";
-
-const secret = "mysecretsshhhhh";
-const expiration = "2h";
 
 export default {
   authMiddleware: function ({ req }) {
@@ -17,30 +13,17 @@ export default {
       return req;
     }
 
-    try {
-      const { data } = jwt.verify(token, secret, { maxAge: expiration });
-      req.user = data;
-    } catch {
-      console.log("Invalid token");
-    }
-
     return req;
   },
-  signToken: function ({ username, email, _id }) {
-    const payload = { username, email, _id };
-
-    return jwt.sign({ data: payload }, secret, { expiresIn: expiration });
-  },
-  login: function(token) {
-    window.localStorage.setItem('token', token)
+  
+  login: function (token) {
+    window.localStorage.setItem("token", token);
   },
   loggedIn: function () {
-    return !!window.localStorage.getItem('token');
-
+    return !!window.localStorage.getItem("token");
   },
-  logout: function() {
-    window.localStorage.setItem('token', "")
-    window.location = '/'
-  }
+  logout: function () {
+    window.localStorage.setItem("token", "");
+    window.location = "/";
+  },
 };
-
