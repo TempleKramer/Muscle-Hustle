@@ -43,13 +43,13 @@ heroku link
 https://musclehustle.herokuapp.com/
 
 ## Future Development
--Add user interface to count calorie intake
--Add workout suggestions
--Add calendar to see past workouts in prior months
--Add healthy food plans and recipes
+- Add user interface to count calorie intake
+- Add workout suggestions
+- Add calendar to see past workouts in prior months
+- Add healthy food plans and recipes
 
 ## Screenshot 
-![Project Image](./client/src/assets/musclehustle.png)
+![Project Image](/client/public/musclehustle.png)
 
 ## Authors
 Hayden Carr, Jarmaris Chaney, Temple Kramer, Terrany Binford, Zack Boatright
